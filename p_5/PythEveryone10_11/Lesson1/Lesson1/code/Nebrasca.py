@@ -33,3 +33,4 @@ arcpy.RasterToPolygon_conversion(reclass, RasterT_Reclass1, "SIMPLIFY", "VALUE")
 # Process: Clip
 arcpy.Clip_analysis(RasterT_Reclass1, Nebraska__2_, Nebrasca_precip_shp, "")
 
+arcpy.env.overwriteOutput = True

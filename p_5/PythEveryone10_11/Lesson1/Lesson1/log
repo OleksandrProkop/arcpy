@@ -1,0 +1,6 @@
+20180426 913   0     1     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\test1 = IDW(Precip2008Readings,  'RASTERVALU', #, 2.0, SAMPLE, 12,
+201804261012   0     0     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\USA = GRIDSHAPE(E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Less
+201804261021   0     0     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\RasterT_Reclass1 = GRIDSHAPE(E:\Python\arcpy_folder1\p_5\PythEvery
+201804261032   0     1     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\RasterT_Reclass1 = GRIDSHAPE(E:\Python\arcpy_folder1\p_5\PythEvery
+201804261104   0     0     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\RasterT_Reclass1 = GRIDSHAPE(E:\Python\arcpy_folder1\p_5\PythEvery
+201804271702   0     1     0Олександр E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesson1\VM_reilif = CONTOUR(E:\Python\arcpy_folder1\p_5\PythEveryone10_11\
