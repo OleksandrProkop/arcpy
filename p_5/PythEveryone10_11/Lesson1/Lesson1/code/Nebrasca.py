@@ -8,7 +8,7 @@
 
 # Import arcpy module
 import arcpy
-
+arcpy.env.overwriteOutput = True
 Precipitation = arcpy.GetParameterAsText(0)
 Nebraska__2_= arcpy.GetParameterAsText(1)
 Nebrasca_precip_shp = arcpy.GetParameterAsText(2)
@@ -22,15 +22,13 @@ RasterT_Reclass1 = r"E:\Python\arcpy_folder1\p_5\PythEveryone10_11\Lesson1\Lesso
 #Nebrasca_precip_shp = "E:\\Python\\arcpy_folder1\\p_5\\PythEveryone10_11\\Lesson1\\Lesson1\\code\\Nebrasca_precip.shp"
 
 # Process: IDW
-arcpy.Idw_3d(Precipitation, "RASTERVALU", idw_precipitation, "1850,46466995651", "2", "VARIABLE 12", "")
+arcpy.gp.Idw_sa(Precipitation, "RASTERVALU", idw_precipitation, "1850,46466995651", "2", "VARIABLE 12", "")
 
 # Process: Reclassify
-arcpy.Reclassify_3d(idw_precipitation, "VALUE", "27715,960938 46615,086060 1;46615,086060 64536,670227 2;64536,670227 82132,407410 3;82132,407410 111132,789063 4", reclass, "DATA")
+arcpy.gp.Reclassify_sa(idw_precipitation, "VALUE", "27715,960938 46615,086060 1;46615,086060 64536,670227 2;64536,670227 82132,407410 3;82132,407410 111132,789063 4", reclass, "DATA")
 
 # Process: Raster to Polygon
 arcpy.RasterToPolygon_conversion(reclass, RasterT_Reclass1, "SIMPLIFY", "VALUE")
 
 # Process: Clip
 arcpy.Clip_analysis(RasterT_Reclass1, Nebraska__2_, Nebrasca_precip_shp, "")
-
-arcpy.env.overwriteOutput = True
